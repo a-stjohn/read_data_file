@@ -1,11 +1,11 @@
 name: Load Data to Database
 
-on:
-  schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight UTC
+# on:
+#   schedule:
+#     - cron: '0 0 * * *' # Runs daily at midnight UTC
+on: push # test the workflow to make sure it runs
 
-permissions:
-  contents: write-all
+permissions: write-all
 
 jobs:
   update-records:
