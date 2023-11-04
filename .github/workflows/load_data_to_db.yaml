@@ -20,5 +20,8 @@ jobs:
       with:
         python-version: '3.11'
 
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
     - name: Pull Data and Load to DB
       run: python db_load_data.py
